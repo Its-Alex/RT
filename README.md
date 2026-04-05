@@ -4,6 +4,7 @@ Ray Tracing group project for School 42
 
 ## Requirements
 
+* [`mise`](https://mise.jdx.dev/)
 * `pkg-config`
 * `glew`
 * `sdl2`
@@ -14,6 +15,12 @@ If you are on MacOSX with brew installed you can
 
 ```
 $ brew bundle
+```
+
+Then you must install versionned CLIs:
+
+```shell
+$ mise trust && mise install
 ```
 
 ## How-to
