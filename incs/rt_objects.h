@@ -178,6 +178,7 @@ static const t_key				g_light_keys[] = {
 static const t_key				g_main_object_keys[] = {
 	{CAMERA_KEY, RTCAMERA, RTNULL},
 	{LIGHTS_KEY, RTARRAY, RTLIGHT},
+	{"custom_objects", RTARRAY, RTOBJECT},
 	{OBJECTS_KEY, RTARRAY, RTOBJECT}
 };
 
