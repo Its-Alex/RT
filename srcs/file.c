@@ -40,6 +40,7 @@ char			*lst_to_string(t_list *lst)
 	size = get_string_size(lst);
 	if ((s = (char*)malloc(size)) == NULL)
 		return (NULL);
+	s[0] = '\0';
 	tmp = lst;
 	while (tmp)
 	{
