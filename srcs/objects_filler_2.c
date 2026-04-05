@@ -47,11 +47,11 @@ void			fill_quadric_params(t_jobject *jobj, t_quadric *obj)
 void			*fill_quadric(t_jobject *jobj, t_object *q_obj)
 {
 	t_quadric		*obj;
-	double			tr[VEC_SIZE];
+	// double			tr[VEC_SIZE];
 
-	tr[0] = 0.0;
-	tr[1] = 0.0;
-	tr[2] = 0.0;
+	// tr[0] = 0.0;
+	// tr[1] = 0.0;
+	// tr[2] = 0.0;
 	if (!(obj = (t_quadric *)malloc(sizeof(t_quadric))))
 		return (NULL);
 	if (!(q_obj->dim = (void*)malloc(sizeof(t_quadric))))
@@ -64,9 +64,7 @@ void			*fill_quadric(t_jobject *jobj, t_object *q_obj)
 
 t_object_def	fill_object_init(t_jobject *jobj, t_object *obj, int num)
 {
-	t_object_def	obj_def;
-
-	obj_def = get_object_def_by_name(get_jobject(jobj, RT_OBJECT_TYPE)->value);
+	t_object_def	obj_def = get_object_def_by_name(get_jobject(jobj, RT_OBJECT_TYPE)->value);
 	obj->next = NULL;
 	obj->type = obj_def.type;
 	obj->num = num;
@@ -85,10 +83,10 @@ t_object_def	fill_object_init(t_jobject *jobj, t_object *obj, int num)
 
 int				fill_object(t_object *obj, t_jobject *jobj, int num)
 {
-	t_object_def	obj_def;
+	t_object_def	obj_def = fill_object_init(jobj, obj, num);
 	t_jobject		*tmp;
 
-	obj_def = fill_object_init(jobj, obj, num);
+	(void)obj_def;
 	tmp = get_jobject(jobj, "color");
 	obj->col = get_color((t_jarray*)(tmp->value));
 	tmp = get_jobject(jobj, "kd");

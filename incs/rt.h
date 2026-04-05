@@ -92,8 +92,11 @@
 # define NK_INCLUDE_FONT_BAKING
 # define NK_INCLUDE_DEFAULT_FONT
 
+# pragma GCC diagnostic push
+# pragma GCC diagnostic ignored "-Wmaybe-uninitialized"
 # include "nuklear.h"
 # include "nuklear_sdl_gl3.h"
+# pragma GCC diagnostic pop
 
 # define WINDOW_GUI_WIDTH 600
 # define WINDOW_GUI_HEIGHT 900

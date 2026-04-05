@@ -38,7 +38,7 @@ t_limit		*get_limits(t_jarray *array)
 	t_limit		*limits;
 	t_limit		*new;
 	t_jarray	*tmp;
-	t_jobject	*obj;
+	// t_jobject	*obj;
 
 	limits = NULL;
 	tmp = array;
@@ -46,7 +46,7 @@ t_limit		*get_limits(t_jarray *array)
 	{
 		if (!(new = (t_limit*)malloc(sizeof(t_limit))))
 			return (NULL);
-		obj = get_limit_obj(tmp, new);
+		// obj = get_limit_obj(tmp, new);
 		new->next = limits;
 		limits = new;
 		tmp = tmp->next;

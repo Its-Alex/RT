@@ -39,6 +39,7 @@ t_custom_obj	*get_custom_obj(t_jarray *array, t_param *param,
 		return (NULL);
 	if (fill_custom_obj(custom_obj, array->value) == 0)
 		return (NULL);
+	custom_obj->next = NULL;
 	custom_obj->next = get_custom_obj(array->next, param, custom_obj->next);
 	return (custom_obj);
 }

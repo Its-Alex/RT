@@ -21,7 +21,7 @@
 # define CAMERA_KEY				"camera"
 # define LIGHTS_KEY				"lights"
 # define OBJECTS_KEY			"objects"
-# define RT_KEYS_SIZE(keys)		(sizeof(keys) / sizeof(t_key))
+# define RT_KEYS_SIZE(keys)		(sizeof(keys) / sizeof((keys)[0]))
 
 typedef enum					e_object_type
 {

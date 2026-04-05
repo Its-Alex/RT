@@ -20,11 +20,11 @@ void	*fill_sphere(t_jobject *jobj, t_object *s_obj)
 {
 	t_sphere	*obj;
 	t_jobject	*tmp;
-	double		tr[VEC_SIZE];
+	// double		tr[VEC_SIZE];
 
-	tr[0] = 0.0;
-	tr[1] = 0.0;
-	tr[2] = 0.0;
+	// tr[0] = 0.0;
+	// tr[1] = 0.0;
+	// tr[2] = 0.0;
 	if (!(obj = (t_sphere *)malloc(sizeof(t_sphere))))
 		return (NULL);
 	if (!(s_obj->dim = (void*)malloc(sizeof(t_sphere))))
@@ -41,11 +41,11 @@ void	*fill_sphere(t_jobject *jobj, t_object *s_obj)
 void	*fill_plane(t_jobject *jobj, t_object *p_obj)
 {
 	t_plane		*obj;
-	double		tr[VEC_SIZE];
+	// double		tr[VEC_SIZE];
 
-	tr[0] = 0.0;
-	tr[1] = 0.0;
-	tr[2] = 0.0;
+	// tr[0] = 0.0;
+	// tr[1] = 0.0;
+	// tr[2] = 0.0;
 	if (!(obj = (t_plane *)malloc(sizeof(t_plane))))
 		return (NULL);
 	if (!(p_obj->dim = (void*)malloc(sizeof(t_plane))))
@@ -62,11 +62,11 @@ void	*fill_cone(t_jobject *jobj, t_object *c_obj)
 {
 	t_cone		*obj;
 	t_jobject	*tmp;
-	double		tr[VEC_SIZE];
+	// double		tr[VEC_SIZE];
 
-	tr[0] = 0.0;
-	tr[1] = 0.0;
-	tr[2] = 0.0;
+	// tr[0] = 0.0;
+	// tr[1] = 0.0;
+	// tr[2] = 0.0;
 	if (!(obj = (t_cone *)malloc(sizeof(t_cone))))
 		return (NULL);
 	if (!(c_obj->dim = (void*)malloc(sizeof(t_cone))))
@@ -85,11 +85,11 @@ void	*fill_cylinder(t_jobject *jobj, t_object *c_obj)
 {
 	t_cylindre	*obj;
 	t_jobject	*tmp;
-	double		tr[VEC_SIZE];
+	// double		tr[VEC_SIZE];
 
-	tr[0] = 0.0;
-	tr[1] = 0.0;
-	tr[2] = 0.0;
+	// tr[0] = 0.0;
+	// tr[1] = 0.0;
+	// tr[2] = 0.0;
 	if (!(obj = (t_cylindre *)malloc(sizeof(t_cylindre))))
 		return (NULL);
 	if (!(c_obj->dim = (void*)malloc(sizeof(t_cylindre))))
@@ -108,11 +108,11 @@ void	*fill_cube(t_jobject *jobj, t_object *c_obj)
 {
 	t_cube		*obj;
 	t_jobject	*tmp;
-	double		tr[VEC_SIZE];
+	// double		tr[VEC_SIZE];
 
-	tr[0] = 0.0;
-	tr[1] = 0.0;
-	tr[2] = 0.0;
+	// tr[0] = 0.0;
+	// tr[1] = 0.0;
+	// tr[2] = 0.0;
 	if (!(obj = (t_cube*)malloc(sizeof(t_cube))))
 		return (NULL);
 	if (!(c_obj->dim = (void*)malloc(sizeof(t_cube))))

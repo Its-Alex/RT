@@ -74,15 +74,16 @@ void		launch_threads(t_param *param)
 {
 	int			count;
 	int			thread_return_value;
-	clock_t		start;
+	// clock_t		start;
 	t_param		*params[NB_THREAD];
 
 	count = 0;
-	start = clock();
+	// start = clock();
+
 	if (DEBUG)
 		ft_putstr("==> Launch thread\n");
 	init_params(param, params);
-	start = clock();
+	// start = clock();
 	threads_loop(param, params);
 	param->end = clock();
 	while (count < NB_THREAD)
